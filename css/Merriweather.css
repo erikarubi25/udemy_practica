@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(/css/font/Merriweather-Black.ttf);
+    src: url(/css/font/Merriweather-BlackItalic.ttf);
+    src: url(/css/font/Merriweather-Bold.ttf);
+    src: url(/css/font/Merriweather-BoldItalic.ttf);
+    src: url(/css/font/Merriweather-Italic.ttf);
+    src: url(/css/font/Merriweather-Light.ttf);
+    src: url(/css/font/Merriweather-LightItalic.ttf);
+    src: url(/css/font/Merriweather-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
