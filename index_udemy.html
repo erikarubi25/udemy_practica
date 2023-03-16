@@ -44,9 +44,17 @@
 
         </nav>
 
-        <div id="previa_section"><img src="img/proximoi.png" alt=""></div>
-        <div id="next_section"><img src="img/proximoi.png" alt=""></div>
+        <div id="previa_section" onclick="displaySection('prev')"><img src="img/proximoi.png" alt=""></div>
+        <div id="next_section" onclick="displaySection('next')"><img src="img/proximoi.png" alt=""></div>
     </header>
+
+    <div id="slider">
+        <section class="slide" id="home" style="display: block;"></section>
+        <section class="slide" id="aboutme" style="display: none;"></section>
+        <section class="slide" id="skills" style="display: none;"></section>
+        <section class="slide" id="portafolio" style="display: none;"></section>
+        <section class="slide" id="blog" style="display: none;"></section>
+    </div>
 
     <script>
         alertSize();
@@ -89,6 +97,50 @@
                 card_menu.style.display = "none";
             }
         }
+
+        function displaySection(nav){
+            var sections = new Array(5);
+            sections[0] = "home";
+            sections[1] = "aboutme";
+            sections[2] = "skills";
+            sections[3] = "portafolio";
+            sections[4] = "blog";
+
+            var search;
+            var show;
+
+            for (var i=0; i<5; i++){
+                search = document.getElementById(sections[i]);
+                show = search.style.display;
+
+                if (show == "block"){
+                    search.style.display = "none";
+                    if (nav == "next"){
+                        i++;
+                        if (i>4) i=0;
+                    }
+                    if (nav == "prev"){
+                        i--;
+                        if (i<0) i=4;
+                    }
+                    search = document.getElementById(sections[i]);
+                    search.style.display = "block";
+                    break;
+                }
+            }
+            if (sections [i] == "home"){
+                bkgr_body = "#233d58";
+                bkgr_menu = "#233d58";
+            }
+            else{
+                bkgr_body = "#f1f1f1";
+                bkgr_menu = "#29abe2";
+            }
+            search.style.background = bkgr_body;
+            var menu = document.getElementsByTagName ("header")[0];
+            menu.style.background = bkgr_menu;
+        }
+
     </script>
 
 </body>
