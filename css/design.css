@@ -121,7 +121,7 @@ header #next_section img{
     background: purple;
 }
 
-@media screen and (min-width:480px){
+@media screen and (min-width:360px){
     body{
         background: #afaeae;
     }
