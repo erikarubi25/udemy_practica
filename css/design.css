@@ -121,7 +121,7 @@ header #next_section img{
     background: purple;
 }
 
-#contac_form{
+#contact_form{
     position: absolute;
     right: 0px;
     top: 35px;
@@ -133,25 +133,26 @@ header #next_section img{
     font-family: 'AbrilFatface'; /*Revisar la fuente no se realizó el cambio*/
     height: 100vh;
     z-index: 999;
+    display: none;
 }
-#contac_form #close_form{
+#contact_form #close_form{
     position: absolute;
     width: 30px;
     height: 30px;
     left: 85%;
     top: 190px;
 }
-#contac_form #close_form:hover{
+#contact_form #close_form:hover{
     cursor: pointer;
 }
-#contac_form #close_form:before{
+#contact_form #close_form:before{
     font-family:'icomoon';
     content: "\ea0f";
     top: 5px;
     left: 9px;
     position: relative;
 }
-#contac_form figure{
+#contact_form figure{
     height: 180px;
     width: 100%;
     margin: 0px;
@@ -159,17 +160,17 @@ header #next_section img{
     text-align: center;
     background: #29abe2;
 }
-#contac_form figure img{
+#contact_form figure img{
     height: 100%;
     margin: 0px;
 }
-#contac_form p{
+#contact_form p{
     margin: 20px;
     width: 90%;
     margin-left: 5%;
 }
-#contac_form input,
-#contac_form textarea{
+#contact_form input,
+#contact_form textarea{
     display: block;
     margin: 20px;
     border: none;
@@ -180,14 +181,35 @@ header #next_section img{
     margin-bottom: 50px;
     font-weight: bold;
 }
-#contac_form #button{
+#contact_form #button{
     background: #f8931f;
     color: white;
     border: none;
     padding: 8px 0px;
     border-radius: 5px;
 }
-
+#contact_button{
+    width: 60px;
+    height: 60px;
+    background: #f8931f;
+    border-radius: 50%;
+    color: white;
+    z-index: 80;
+    right: 10px;
+    position: fixed;
+    top: 80vh;
+}
+#contact_button:hover{
+    cursor: pointer;
+}
+#contact_button:before{
+    font-family: 'icomoon';
+    content: "\e949";
+    position: relative;
+    font-size: 3.5em;
+    top: -3px;
+    left: 6px;
+}
 
 @media screen and (min-width:480px){
     body{
@@ -294,6 +316,13 @@ header #next_section img{
         width: 100%;
         top: 0px;
         left: 0;
+    }
+    #contact_form{
+        top: 55px;
+        width: 400px;
+    }
+    #contact_button{
+        right: 40px;
     }
 
 }
