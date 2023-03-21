@@ -6,7 +6,7 @@ body{
 
 header{
     width: 100%;
-    height: 35px;
+    height: 45px;
     background: #233d58;
     position: relative;
     z-index: 999;
@@ -96,7 +96,7 @@ header #next_section img{
 #slider section.slide{
     position: absolute;
     width: 100%;
-    top: -17px;
+    top: -20px;
     left: 0px;
 }
 
@@ -105,16 +105,32 @@ header #next_section img{
     font-family: 'AbrilFatface';
     position: relative;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 #slider #home .mainanimation {
-    background: red;
     width: 85%;
     margin-left: 15px;
     min-height: 300px;
     position: absolute;
 }
+canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+
+  /* ---- particles.js container ---- */
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 #slider #home .mainlogo{
     background: none;
     position: relative;
@@ -161,19 +177,19 @@ header #next_section img{
 
 #slider #aboutme{
     height: 400px;
-    background: yellow;
+
 }
 #slider #skills{
     height: 300px;
-    background: red;
+
 }
 #slider #portafolio{
     height: 200px;
-    background: blue;
+
 }
 #slider #blog{
     height: 100px;
-    background: purple;
+
 }
 
 #contact_form{
@@ -272,7 +288,7 @@ footer{
     color: white;
     text-align: center;
     z-index: 90;
-    height: 150px;
+    height: 180px;
     position: fixed;
     bottom: -130px;
     transition-duration: 0.4s;
@@ -292,15 +308,19 @@ footer:after{
     margin-top: -30px;
     border-radius: 50%;
     background: black;
-    color: white;
+    color: black;
     transform: rotate(180deg);
     font-size: 5em;
     transition-duration: 0.4s;
+    text-shadow: 0px 15px 0px white;
+
 }
 footer:hover:after{
     transform: rotate(0deg);
     background: white;
     color: black;
+    text-shadow: 0px 0px 0px black;
+
 }
 footer .rrss{
     margin-top: 70px;
@@ -361,14 +381,10 @@ footer p{
     }
 }
 @media screen and (min-width:600px){
-    body{
-        background: orange;
-    }
+
 }
 @media screen and (min-width:767px){
-    body{
-        background: yellow;
-    }
+
     header{
         height: 55px;
     }
@@ -471,7 +487,5 @@ footer p{
 
 }
 @media screen and (min-width:950px){
-    body{
-        background:green;
-    }
+
 }
