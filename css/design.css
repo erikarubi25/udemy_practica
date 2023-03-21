@@ -10,6 +10,7 @@ header{
     height: 35px;
     background: #233d58;
     position: relative;
+    z-index: 999;
 }
 header h1{
     display: none;
@@ -96,7 +97,7 @@ header #next_section img{
 #slider section.slide{
     position: absolute;
     width: 100%;
-    top: 0px;
+    top: -17px;
     left: 0px;
 }
 
@@ -118,7 +119,6 @@ header #next_section img{
 #slider #home .mainlogo{
     background: none;
     position: relative;
-    background: green;
     width: 60vw;
     margin-left: 15vw;
     min-height: 430px;
@@ -138,6 +138,26 @@ header #next_section img{
 #slider #home .mainlogo figure img{
     width: 100%;
     margin: 0px;
+}
+#slider #home .buttonspage{
+    width: 100%;
+    text-align: center;
+
+}
+#slider #home .buttonspage > *{     /* con el selector "> *" se aplican los estilos a los hijos directos del elemento en este caso del div */
+    display: inline-block;
+    width: 40%;
+    margin: 5px 2.5%;
+    color: white;
+    padding: 15px 2.5%;
+}
+#slider #home #contratame{
+    cursor: pointer;
+    background: #f8931f;
+}
+#slider #home a{
+    text-decoration: none;
+    background: #29abe2;
 }
 
 #slider #aboutme{
@@ -252,9 +272,17 @@ header #next_section img{
         width: 270px;
         left: 50%;
         margin-left: -135px;
+        padding-bottom: 50px;
     }
     #slider #home .mainlogo h2{
         font-size: 1.4em;
+    }
+    #slider #home .mainlogo figure{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #slider #home .buttonspage > *{
+        width: 200px;
     }
 }
 @media screen and (min-width:600px){
