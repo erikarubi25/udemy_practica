@@ -274,7 +274,33 @@ footer{
     z-index: 90;
     height: 150px;
     position: fixed;
+    bottom: -130px;
+    transition-duration: 0.4s;
+}
+footer:hover{
     bottom: 0px;
+}
+footer:after{
+    font-family: 'icomoon';
+    content: "\ea0f";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -30px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    transform: rotate(180deg);
+    font-size: 5em;
+    transition-duration: 0.4s;
+}
+footer:hover:after{
+    transform: rotate(0deg);
+    background: white;
+    color: black;
 }
 footer .rrss{
     margin-top: 70px;
