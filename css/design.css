@@ -90,7 +90,7 @@ header #next_section img{
     width: 100%;
     position: relative;
     height: 600px;
-    background: black;
+
 }
 
 #slider section.slide{
@@ -101,9 +101,45 @@ header #next_section img{
 }
 
 #slider #home{
-    height: 500px;
-    background: orange;
+    background: #233d58;
+    font-family: 'AbrilFatface';
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
 }
+
+#slider #home .mainanimation {
+    background: red;
+    width: 85%;
+    margin-left: 15px;
+    min-height: 300px;
+    position: absolute;
+}
+#slider #home .mainlogo{
+    background: none;
+    position: relative;
+    background: green;
+    width: 60vw;
+    margin-left: 15vw;
+    min-height: 430px;
+}
+#slider #home .mainlogo h2{
+    font-size: 1.2em;
+    padding-top: 80px;
+    color: white;
+    font-weight: lighter;
+}
+#slider #home .mainlogo strong{
+    font-size: 2em;
+    font-family: 'Merriweather';
+    display: block;
+}
+#slider #home .mainlogo figure,
+#slider #home .mainlogo figure img{
+    width: 100%;
+    margin: 0px;
+}
+
 #slider #aboutme{
     height: 400px;
     background: yellow;
@@ -212,8 +248,13 @@ header #next_section img{
 }
 
 @media screen and (min-width:480px){
-    body{
-        background: #afaeae;
+    #slider #home .mainlogo{
+        width: 270px;
+        left: 50%;
+        margin-left: -135px;
+    }
+    #slider #home .mainlogo h2{
+        font-size: 1.4em;
     }
 }
 @media screen and (min-width:600px){
