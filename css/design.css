@@ -121,7 +121,75 @@ header #next_section img{
     background: purple;
 }
 
-@media screen and (min-width:360px){
+#contac_form{
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    background: white;
+    width: 300px;
+
+    border-top: 1px solid black;
+    box-shadow: 0px 0px 3px #9f9e9e;
+    font-family: 'AbrilFatface'; /*Revisar la fuente no se realizó el cambio*/
+    height: 100vh;
+    z-index: 999;
+}
+#contac_form #close_form{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 85%;
+    top: 190px;
+}
+#contac_form #close_form:hover{
+    cursor: pointer;
+}
+#contac_form #close_form:before{
+    font-family:'icomoon';
+    content: "\ea0f";
+    top: 5px;
+    left: 9px;
+    position: relative;
+}
+#contac_form figure{
+    height: 180px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: #29abe2;
+}
+#contac_form figure img{
+    height: 100%;
+    margin: 0px;
+}
+#contac_form p{
+    margin: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+#contac_form input,
+#contac_form textarea{
+    display: block;
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+#contac_form #button{
+    background: #f8931f;
+    color: white;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width:480px){
     body{
         background: #afaeae;
     }
